@@ -182,6 +182,10 @@ public:
 	int8_t readEncoderValue(uint8_t pinA, uint8_t pinB);
 #endif
 
+	uint8_t getAddress() const {
+        return _address;
+    }
+
 	int getLatency() const {
 		return latency;
 	}
